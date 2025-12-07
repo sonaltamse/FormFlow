@@ -14,3 +14,22 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Features
+Google-style feedback form layout
+Controlled form fields using React state
+Fields include Name, Email, Category, Feedback, Subscribe
+Submission popup displaying all user inputs
+Glass-morphism UI styling
+Responsive and centered layout
+
+## Technologies Used
+React
+Vite
+JavaScript (ES6+)
+CSS
+useState Hook
+
+## ScreenShots
+<img width="1916" height="874" alt="image" src="https://github.com/user-attachments/assets/e37cae90-8f96-4820-b310-694059d74fd9" />
+<img width="1606" height="687" alt="image" src="https://github.com/user-attachments/assets/d6c0400e-b299-4380-9540-7366ea71628f" />
