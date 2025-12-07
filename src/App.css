@@ -1,0 +1,199 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+
+  /* Google Office background */
+  background: url("https://arktura.com/wp-content/uploads/2023/01/Arktura-Arborisa-Axil-CharredOak-EasternLobby-Cam01-scaled.jpg?utm_source=chatgpt.com")
+      center/cover no-repeat;
+  overflow: hidden;
+}
+
+/* Light overlay for clarity */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.08);
+  z-index: 0;
+}
+
+/* Core Form Container — PREMIUM GLASS */
+.form-container {
+  position: relative;
+  z-index: 2;
+  
+  width: 480px;
+  padding: 40px 45px;
+  
+  background: rgba(255,255,255,0.28);   /* brighter */
+  border-radius: 22px;
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  
+  border: 1px solid rgba(255,255,255,0.45);
+  box-shadow:
+      0 20px 45px rgba(0,0,0,0.25),
+      0 0 0 1px rgba(255,255,255,0.1) inset;
+  
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #202124; /* Google dark grey */
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 0.4px;
+}
+
+/* Input Styling */
+.form-field {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  color: #292929;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.2);
+  
+  background: rgba(255,255,255,0.65); /* brighter */
+  color: #1c1c1c;
+  
+  font-size: 15px;
+  transition: 0.25s ease;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #706f6f;
+}
+
+select {
+  color: #212121;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26,115,232,0.25);
+}
+
+/* Checkbox */
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-field label {
+  color: #1f1f1f;
+  font-size: 14px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 180px;
+  padding: 12px;
+  margin: 25px auto 0 auto;
+  display: block;
+
+  background: linear-gradient(135deg, #4285F4, #34A853);
+  border: none;
+  border-radius: 14px;
+  
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.submit-btn:active {
+  transform: scale(0.96);
+}
+
+/* POPUP */
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-card {
+  background: #ffffff;
+  padding: 28px 32px;
+  border-radius: 16px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.popup-card h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  color: #1a73e8;
+}
+
+.popup-details {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.popup-btn {
+  background: #1a73e8;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.popup-btn:hover {
+  background: #1765d1;
+}
